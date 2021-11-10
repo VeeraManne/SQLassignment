@@ -1,0 +1,35 @@
+ABTS LOGIN
+
+TestCases	precondition	                             scenario	                              action	                                    test data	                        expected out	
+1	Requirements for ABTS login screen	   login credentials	enter valid logiid and pswrd and click on submit	        credentials are valid	        Login accepted	opens page 
+2	Requirements for ABTS login screen	   login credentials	enter invalid loginid and valid pswrd and click on submit	invalid loginid or pswrd	login rejected	show error
+3	Requirements for ABTS login screen	    login credentials	enter valid loginid and invalid pswrdand click on submit	invalid loginid or pswrd	login rejected	show error
+						
+LEAVE TRACKING SYSTEM						
+						
+TestCases	   precondition	  scenario	                                           action	                                             testdata	                          expected output	
+
+1	leave tracking page should be visible	apply for leave	select type of issue enter vaild date and valid reason click on submit	  valid date reason should enter        grants leave
+2	leave tracking page should be visible	apply for leave	select type of issue enter invalid date and reason click on submit	  invalid date reason should enter	decline the leave and shows invalid date	
+3	leave tracking page should be visible	apply for leave	select type of issue enter vaild date and invalid reason click on submit  valid date without reason	        decline	the leave and shows invalid reason
+						
+						
+						
+HR CONNECT						
+						
+TestCases	PRECONDITION              SCENARIO	                                    ACTION	                                                                                  TEST  DATA                                                           	EXPECTED OUTPUT	
+
+1	HR Issue Registration	issue registration	enter empname,empid,project/dept,select location,add extn,issues and select category and subcategory and click on send	valid empid,nameand valid issue with valid category and subcategory	connected successfully	
+2	HR Issue Registration	issue registration	enter empname,empid,project/dept,select location,add extn,issues and select category and subcategory and click on send	invalid empid,name and valid issuewith valid category and subcategory	unable to connect	
+3	HR Issue Registration	issue registration	enter empname,empid,project/dept,select location,add extn,issues and select category and subcategory and click on send	valid empid,name and invalid issuewith valid category and subcategory	unable to connect	
+						
+						
+MEETING ROOM BOOKING SYSTEM						
+						
+TestCases	           precondition                          	scenario	                                                                  ACTION	                                                 TEST DATA	                         EXPECTED OUTPUT	
+
+1	Requirements for request in MRBS	request in MRBS	ACCEPT proj/group,                         enter extn,select traditional,select time ,entername,mailid,phn no and click on submit	  valid select time,extn,proj/group	         The booking is successful	
+				
+2	Requirements for request in MRBS	request in MRBS	ACCEPT proj/group,enter extn               select traditional,select time ,entername,mailid,phn no and click on submit	                  invalid select time and validextn,proj/group	 The booking is unsuccessfull	
+3	Requirements for request in MRBS	request in MRBS	ACCEPT proj/group,enter extn               select traditional,select time ,entername,mailid,phn no and click on submit	                  valid select time and invalidextn,proj/group	 The booking is unsuccessfull	
+						
